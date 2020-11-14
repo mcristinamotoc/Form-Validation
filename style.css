@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/img.jpg");
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    color: dimgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+/*Modal Windows*/
+
+.modal fade {
+    margin-top: 1rem;
+}
+
+.btn {
+    color: black;
+    font-size: 1rem;
+    margin: 5px, 5px;
+    padding: 0, 0;
+    flex: 1, 1, auto;
+    border-radius: 0.3rem;
+    display: block;
+}
+
+#provincia {
+    width: 100%;
+    border: 2px solid lightgray;
+    border-radius: 0.4rem;
+    display: block;
+    font-size: 1rem;
+    padding: 0;
+}
+
+#search {
+    flex: 0, 1, auto;
+}
+
+@media (max-width: 998px) {
+    .row {
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+    .btn {
+        margin-left: 0.5rem;
+    }
+    .form {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+}
